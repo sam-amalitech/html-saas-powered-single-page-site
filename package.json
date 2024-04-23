@@ -1,0 +1,18 @@
+{
+  "name": "html-saas-powered-single-page-site",
+  "version": "1.0.0",
+  "description": "Core media Sass upskill project",
+  "main": "index.js",
+  "repository": "https://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@github.com/sam-amalitech/html-saas-powered-single-page-site.git",
+  "author": "Joseph Sam <joseph.sam@amalitech.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.75.0"
+  }
+}
