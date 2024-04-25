@@ -4,24 +4,140 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-<<<<<<< HEAD
-      <link rel="stylesheet" href="scss/main.scss" />
-	</head>
-	<body></body>
-=======
 		<link rel="stylesheet" href="scss/main.scss" />
 	</head>
-	<body>
-		<header>
-			<nav></nav>
+	<body class="light">
+		<header class="header">
+			<nav class="nav-bar bg-color-500">
+				<a href="#home" class="icon-btn">
+					<img src="/assets/icons/home-page.png" alt="" />
+					<p>Home</p>
+				</a>
+				<a href="#about" class="icon-btn">
+					<img src="/assets/icons/about-page.png" alt="" />
+					<p>About</p>
+				</a>
+				<a href="#education" class="icon-btn">
+					<img src="/assets/icons/education-page.png" alt="" />
+					<p>Education</p>
+				</a>
+				<a href="#skills" class="icon-btn">
+					<img src="/assets/icons/skills-page.png" alt="" />
+					<p>Skills</p>
+				</a>
+				<a href="#contact" class="icon-btn">
+					<img src="/assets/icons/contact-page.png" alt="" />
+					<p>Contact</p>
+				</a>
+			</nav>
 		</header>
 		<main>
-			<section id="hero"></section>
-			<section></section>
-			<section></section>
-			<section></section>
+			<section class="wrapper hero-section bg-color-500" id="home">
+				<section class="hero-info">
+					<h1 class="main-heading">Hi there, I'm Joseph Sam</h1>
+					<h2 class="sub-heading">Frontend Developer</h2>
+					<p class="paragraph">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						Nihil autem nam consectetur neque quaerat harum maiores vero
+						amet, soluta corrupti aliquam doloremque voluptas eaque iste
+						veritatis facilis. Modi, ea assumenda!
+					</p>
+
+					<div class="btn-container">
+						<button class="btn bg-color-200 text-color-500">
+							Hire Me
+						</button>
+						<button class="btn text-color-200">Get in touch</button>
+					</div>
+				</section>
+				<figure class="hero-image">
+					<div class="gradient-overlay">
+						<span class="img-1"></span>
+						<span class="img-2"></span>
+						<span class="img-3"></span>
+						<span class="img-4"></span>
+						<span class="img-5"></span>
+						<span class="img-6"></span>
+					</div>
+					<img src="assets/mypic.png" alt="portfolio" />
+				</figure>
+			</section>
+			<section class="wrapper about-section bg-color-300" id="about">
+				<h1 class="heading-secondary">About <span>Me</span></h1>
+				<figure>
+					<img src="assets/mypic.png" alt="portfolio" />
+				</figure>
+
+				<h2 class="sub-heading text-color-100">Frontend Developer</h2>
+				<p class="paragraph">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+					Obcaecati mollitia, quos ab molestiae temporibus, eaque aperiam
+					rerum tenetur quam facilis illo consequuntur molestias blanditiis
+					autem, itaque in quaerat. Minima, autem? rerum tenetur quam
+					facilis illo consequuntur molestias blanditiis autem, itaque in
+					quaerat. Minima, autem? rerum tenetur quam facilis illo
+					consequuntur molestias blanditiis autem, itaque in quaerat.
+					Minima, autem?
+				</p>
+
+				<button class="btn bg-color-200 text-color-500">Read More</button>
+			</section>
+			<section class="wrapper education-section bg-color-500" id="education">
+				<h1 class="heading-secondary">My <span>Journey</span></h1>
+				<section class="edu-container">
+					<section>
+						<h3>Education</h3>
+						<div class="edu-card">
+							<p><span></span> 2018 - 2022</p>
+							<h4>Bachelors Degree - University</h4>
+							<p class="paragraph">
+								Lorem ipsum dolor sit, amet consectetur adipisicing
+								elit. Iusto accusamus, soluta optio quisquam tempore
+								consequuntur totam, asperiores dicta id officia autem
+							</p>
+						</div>
+						<div class="edu-card">
+							<p><span></span> 2018 - 2022</p>
+							<h4>Bachelors Degree - University</h4>
+							<p class="paragraph">
+								Lorem ipsum dolor sit, amet consectetur adipisicing
+								elit. Iusto accusamus, soluta optio quisquam tempore
+								consequuntur totam
+							</p>
+						</div>
+					</section>
+					<section>
+						<h3>Experience</h3>
+						<div class="edu-card">
+							<p><span></span> 2018 - 2022</p>
+							<h4>Bachelors Degree - University</h4>
+							<p class="paragraph">
+								Lorem ipsum dolor sit, amet consectetur adipisicing
+								elit. Iusto accusamus, soluta optio quisquam tempore
+								consequuntur totam, asperiores dicta id officia autem
+							</p>
+						</div>
+						<div class="edu-card">
+							<p><span></span> 2018 - 2022</p>
+							<h4>Bachelors Degree - University</h4>
+							<p class="paragraph">
+								Lorem ipsum dolor sit, amet consectetur adipisicing
+								elit. Iusto accusamus, soluta optio quisquam tempore
+								consequuntur totam, asperiores dicta id officia autem
+							</p>
+						</div>
+					</section>
+				</section>
+			</section>
+			<section
+				class="wrapper skills-section bg-color-300"
+				id="skills"
+			></section>
+			<section
+				class="wrapper contact-section bg-color-400"
+				id="contact"
+			></section>
 		</main>
 		<footer></footer>
 	</body>
->>>>>>> 28da650 (feat: initialized sass with parcel)
 </html>

@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\JosephSam\\Desktop\\projects\\Amalitech\\core-media-upskilling\\html-saas-powered-single-page-site\\src\\assets\\images\\image-1.png":[["image-1.028a7c04.png","assets/images/image-1.png"],"assets/images/image-1.png"],"C:\\Users\\JosephSam\\Desktop\\projects\\Amalitech\\core-media-upskilling\\html-saas-powered-single-page-site\\src\\assets\\images\\image-2.png":[["image-2.c6541f88.png","assets/images/image-2.png"],"assets/images/image-2.png"],"C:\\Users\\JosephSam\\Desktop\\projects\\Amalitech\\core-media-upskilling\\html-saas-powered-single-page-site\\src\\assets\\images\\image-3.png":[["image-3.c3a1426f.png","assets/images/image-3.png"],"assets/images/image-3.png"],"C:\\Users\\JosephSam\\Desktop\\projects\\Amalitech\\core-media-upskilling\\html-saas-powered-single-page-site\\src\\assets\\images\\image-4.png":[["image-4.e784fea9.png","assets/images/image-4.png"],"assets/images/image-4.png"],"C:\\Users\\JosephSam\\Desktop\\projects\\Amalitech\\core-media-upskilling\\html-saas-powered-single-page-site\\src\\assets\\images\\image-5.png":[["image-5.ab77719e.png","assets/images/image-5.png"],"assets/images/image-5.png"],"C:\\Users\\JosephSam\\Desktop\\projects\\Amalitech\\core-media-upskilling\\html-saas-powered-single-page-site\\src\\assets\\images\\image-6.png":[["image-6.364c19d2.png","assets/images/image-6.png"],"assets/images/image-6.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59991" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61074" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
