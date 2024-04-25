@@ -1,0 +1,59 @@
+   $breakpoints-tablet: 768px;
+   $breakpoints-laptop: 1024px;
+   $breakpoints-mobile: 480px;
+
+   @mixin media-breakpoint($device) {
+
+      @if($device =='mobile') {
+         @media only screen and (max-width: $breakpoints-mobile) {
+            @content;
+         }
+      }
+
+      @if($device =='tablet') {
+         @media only screen and (min-width: $breakpoints-mobile) and (max-width: $breakpoints-tablet) {
+            @content;
+         }
+      }
+
+      @if($device =='laptop') {
+         @media only screen and (min-width: $breakpoints-tablet) {
+            @content;
+         }
+      }
+   }
+
+   @mixin set-root-css() {
+      :root {
+         @content;
+      }
+   }
+
+   @mixin space-elements($space, $direction : 'all') {
+      display: flex;
+
+      @if($direction =='all') {
+         gap: $space;
+      }
+
+      @if($direction =='x') {
+         column-gap: $space;
+      }
+
+      @if($direction =='y') {
+         row-gap: $space;
+      }
+   }
+
+   @mixin spin-animation($duration) {
+      animation-name: spin;
+      animation-duration: $duration;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+      @keyframes spin {
+         to {
+            transform: rotate(360deg);
+         }
+      }
+   }

@@ -1,0 +1,28 @@
+.main-heading {
+   font-size: var(--fs-4);
+   font-weight: 700;
+   line-height: 1.2;
+   color: var(--primary-100);
+}
+
+.heading-secondary {
+   @extend .main-heading;
+   span {
+      color: var(--primary-200);
+   }
+}
+
+.sub-heading {
+   font-size: var(--fs-3);
+   font-weight: 600;
+   line-height: 1.2;
+   color: var(--primary-200);
+}
+
+.paragraph {
+   font-size: var(--fs-1);
+   font-weight: 400;
+   line-height: 1.5;
+   color: var(--primary-100);
+   opacity: 0.6;
+}

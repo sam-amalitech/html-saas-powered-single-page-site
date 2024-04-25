@@ -1,0 +1,31 @@
+
+$colors: (
+   primary: (
+      100: hsl(90, 8%, 95%),
+      200: hsl(195, 100%, 48%),
+      300: hsl(206, 58%, 17%),
+      400: hsl(205, 67%, 10%),
+      500: hsl(204, 60%, 10%),
+   )
+);
+
+$font-sizes: (
+   laptop: (1: 1rem,
+      2: 1.5rem,
+      3: 2rem,
+      4: 3rem,
+      5: 4rem,
+   ),
+   tablet: (1: 0.75rem,
+      2: 1.5rem,
+      3: 2rem,
+      4: 1rem,
+      5: 2.5rem,
+   ),
+   mobile: (1: 0.5rem,
+      2: 1.5rem,
+      3: 2rem,
+      4: 1rem,
+      5: 2rem,
+   )
+);
