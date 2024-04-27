@@ -1,7 +1,5 @@
-
 $colors: (
-   primary: (
-      100: hsl(90, 8%, 95%),
+   primary: (100: hsl(90, 8%, 95%),
       200: hsl(195, 100%, 48%),
       300: hsl(206, 58%, 17%),
       400: hsl(205, 67%, 10%),
@@ -11,21 +9,30 @@ $colors: (
 
 $font-sizes: (
    laptop: (1: 1rem,
-      2: 1.5rem,
+      2: 1.4rem,
       3: 2rem,
       4: 3rem,
       5: 4rem,
    ),
-   tablet: (1: 0.75rem,
-      2: 1.5rem,
-      3: 2rem,
-      4: 1rem,
-      5: 2.5rem,
+   mobile: (1: 0.8rem,
+      2: 1.2rem,
+      3: 1.8rem,
+      4: 2.5rem,
+      5: 3.5rem,
+   )
+);
+
+$skills: (
+   coding: (
+      html: 85%,
+      react: 90%,
+      css: 75%,
+      vue: 80%,
    ),
-   mobile: (1: 0.5rem,
-      2: 1.5rem,
-      3: 2rem,
-      4: 1rem,
-      5: 2rem,
+   professional: (
+      webDev: 75%,
+      frontEnd: 80%,
+      backEnd: 70%,
+      mobileDev: 60%
    )
 );

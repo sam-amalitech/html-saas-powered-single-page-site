@@ -1,23 +1,16 @@
-   $breakpoints-tablet: 768px;
    $breakpoints-laptop: 1024px;
    $breakpoints-mobile: 480px;
 
    @mixin media-breakpoint($device) {
 
       @if($device =='mobile') {
-         @media only screen and (max-width: $breakpoints-mobile) {
-            @content;
-         }
-      }
-
-      @if($device =='tablet') {
-         @media only screen and (min-width: $breakpoints-mobile) and (max-width: $breakpoints-tablet) {
+         @media only screen and (max-width: $breakpoints-laptop) {
             @content;
          }
       }
 
       @if($device =='laptop') {
-         @media only screen and (min-width: $breakpoints-tablet) {
+         @media only screen and (min-width: $breakpoints-laptop) {
             @content;
          }
       }

@@ -125,7 +125,7 @@ textarea:not([rows]) {
   align-items: center;
 }
 
-.icon-btn, .edu-card, .hero-section .hero-info, .about-section, .education-section, .education-section .edu-container section {
+.icon-btn, .card, .edu-card, .wrapper, .hero-section .hero-info, .education-section .edu-container section, .skills-section .skills-container section, .contact-section form, .contact-section form div, .footer {
   display: flex;
   flex-direction: column;
 }
@@ -135,6 +135,7 @@ textarea:not([rows]) {
   min-height: 100vh;
   padding-inline: 8%;
   padding-block: 5%;
+  align-items: center;
 }
 
 .header {
@@ -147,6 +148,7 @@ textarea:not([rows]) {
   margin-top: 2rem;
   min-width: 28%;
   height: 100%;
+  backdrop-filter: blur(5px);
   column-gap: 1rem;
   font-size: calc(var(--fs-1) - 2px);
   font-weight: 500;
@@ -154,19 +156,14 @@ textarea:not([rows]) {
   border-radius: 2rem;
   padding-inline: 2rem;
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .header .nav-bar {
-    width: 80%;
-  }
-}
 
 .hero-section {
   overflow: hidden;
-  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .hero-section {
     flex-direction: column-reverse;
     justify-content: center;
@@ -179,10 +176,11 @@ textarea:not([rows]) {
   position: relative;
   margin-left: 5rem;
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .hero-section .hero-image {
     margin-left: 0;
     margin-block: 5rem;
+    max-width: 22rem;
   }
 }
 .hero-section .hero-image img {
@@ -219,7 +217,6 @@ textarea:not([rows]) {
 }
 
 .about-section {
-  align-items: center;
   row-gap: 2rem;
 }
 .about-section figure {
@@ -234,17 +231,27 @@ textarea:not([rows]) {
   background-color: var(--primary-500);
   margin-top: 2rem;
 }
+@media only screen and (max-width: 1024px) {
+  .about-section figure {
+    max-width: 30%;
+  }
+}
 .about-section .paragraph {
   text-align: center;
 }
 
 .education-section {
-  align-items: center;
   row-gap: 4rem;
 }
 .education-section .edu-container {
   display: flex;
-  column-gap: 4rem;
+  column-gap: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .education-section .edu-container {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
 }
 .education-section .edu-container section {
   row-gap: 1.5rem;
@@ -253,6 +260,133 @@ textarea:not([rows]) {
   font-size: calc(var(--fs-2) - 4px);
   font-weight: 600;
   color: var(--primary-100);
+}
+
+.skills-section {
+  row-gap: 4rem;
+}
+.skills-section .skills-container {
+  align-self: normal;
+  display: flex;
+  column-gap: 3rem;
+  color: var(--primary-100);
+}
+@media only screen and (max-width: 1024px) {
+  .skills-section .skills-container {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+}
+.skills-section .skills-container section {
+  row-gap: 1.5rem;
+  flex: 1;
+  width: 100%;
+}
+.skills-section .skills-container section .card {
+  outline: 3px solid var(--primary-200);
+  min-width: 50%;
+}
+.skills-section .skills-container .coding .html .level-bar .progress {
+  display: inline-block;
+  width: 85%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+.skills-section .skills-container .coding .react .level-bar .progress {
+  display: inline-block;
+  width: 90%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+.skills-section .skills-container .coding .css .level-bar .progress {
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+.skills-section .skills-container .coding .vue .level-bar .progress {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+.skills-section .skills-container .professional .webDev .level-bar .progress {
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+.skills-section .skills-container .professional .frontEnd .level-bar .progress {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+.skills-section .skills-container .professional .backEnd .level-bar .progress {
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+.skills-section .skills-container .professional .mobileDev .level-bar .progress {
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  background-color: var(--primary-200);
+  border-radius: 0.5rem;
+}
+
+.contact-section {
+  row-gap: 4rem;
+}
+.contact-section form {
+  align-self: normal;
+  align-items: center;
+  row-gap: 2rem;
+  color: var(--primary-100);
+}
+.contact-section form label {
+  font-size: calc(var(--fs-2) - 4px);
+  font-weight: 600;
+  color: var(--primary-200);
+}
+.contact-section form div {
+  row-gap: 0.5rem;
+  width: 70%;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-section form div {
+    width: 100%;
+  }
+}
+.contact-section form div input, .contact-section form div textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: 3px solid var(--primary-200);
+  background-color: transparent;
+  color: var(--primary-100);
+}
+.contact-section form div textarea {
+  resize: none;
+}
+
+.footer {
+  justify-content: center;
+  height: 5rem;
+  padding-inline: 8%;
+}
+.footer p {
+  font-size: calc(var(--fs-1) - 2px);
+  font-weight: 500;
 }
 
 :root {
@@ -293,10 +427,10 @@ textarea:not([rows]) {
   background-color: var(--primary-500);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   :root {
     --fs-1: 1rem;
-    --fs-2: 1.5rem;
+    --fs-2: 1.4rem;
     --fs-3: 2rem;
     --fs-4: 3rem;
     --fs-5: 4rem;
@@ -317,37 +451,13 @@ textarea:not([rows]) {
 :root .text-5 {
   font-size: var(--fs-5);
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   :root {
-    --fs-1: 0.75rem;
-    --fs-2: 1.5rem;
-    --fs-3: 2rem;
-    --fs-4: 1rem;
-    --fs-5: 2.5rem;
-  }
-}
-:root .text-1 {
-  font-size: var(--fs-1);
-}
-:root .text-2 {
-  font-size: var(--fs-2);
-}
-:root .text-3 {
-  font-size: var(--fs-3);
-}
-:root .text-4 {
-  font-size: var(--fs-4);
-}
-:root .text-5 {
-  font-size: var(--fs-5);
-}
-@media only screen and (max-width: 480px) {
-  :root {
-    --fs-1: 0.5rem;
-    --fs-2: 1.5rem;
-    --fs-3: 2rem;
-    --fs-4: 1rem;
-    --fs-5: 2rem;
+    --fs-1: 0.8rem;
+    --fs-2: 1.2rem;
+    --fs-3: 1.8rem;
+    --fs-4: 2.5rem;
+    --fs-5: 3.5rem;
   }
 }
 :root .text-1 {
@@ -395,6 +505,12 @@ textarea:not([rows]) {
   margin-top: -7%;
   z-index: 1;
 }
+@media only screen and (max-width: 1024px) {
+  :root .img-1 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 :root .img-2 {
   width: 4rem;
   height: 4rem;
@@ -410,6 +526,12 @@ textarea:not([rows]) {
   margin-bottom: -8%;
   z-index: 1;
 }
+@media only screen and (max-width: 1024px) {
+  :root .img-2 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 :root .img-3 {
   width: 4rem;
   height: 4rem;
@@ -424,6 +546,12 @@ textarea:not([rows]) {
   transform: translateY(50%);
   margin-left: -8%;
 }
+@media only screen and (max-width: 1024px) {
+  :root .img-3 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 :root .img-4 {
   width: 4rem;
   height: 4rem;
@@ -435,9 +563,14 @@ textarea:not([rows]) {
   position: absolute;
   right: 0;
   bottom: 50%;
-  transform: translateY(50%);
+  transform: translateY(50%) rotate(-90deg);
   margin-right: -8%;
-  transform: rotate(-90deg);
+}
+@media only screen and (max-width: 1024px) {
+  :root .img-4 {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 :root .img-5 {
   width: 4rem;
@@ -451,6 +584,12 @@ textarea:not([rows]) {
   left: 0;
   transform: translate(40%, 40%);
 }
+@media only screen and (max-width: 1024px) {
+  :root .img-5 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 :root .img-6 {
   width: 4rem;
   height: 4rem;
@@ -463,6 +602,12 @@ textarea:not([rows]) {
   right: 0;
   transform: translate(-50%, 40%) scale(1.3);
   border-radius: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  :root .img-6 {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .btn-container {
@@ -503,6 +648,9 @@ textarea:not([rows]) {
   color: var(--primary-200);
   text-decoration: none;
 }
+.icon-btn:hover p {
+  display: block;
+}
 .icon-btn:active {
   color: var(--primary-200);
 }
@@ -515,16 +663,22 @@ textarea:not([rows]) {
 .icon-btn p {
   display: none;
 }
-.icon-btn:hover p {
-  display: block;
+
+.card, .edu-card {
+  border-radius: 0.3rem;
+  padding: 1rem;
 }
 
 .edu-card {
+  outline: 4px solid var(--primary-300);
   row-gap: 0.5rem;
   color: var(--primary-100);
-  outline: 4px solid var(--primary-300);
-  border-radius: 0.3rem;
-  padding: 1rem;
+  height: 12rem;
+}
+@media only screen and (max-width: 1024px) {
+  .edu-card {
+    height: 10rem;
+  }
 }
 .edu-card h4 {
   font-size: calc(var(--fs-2) - 6px);
@@ -542,6 +696,25 @@ textarea:not([rows]) {
   height: 9px;
   border: 1px solid var(--primary-200);
   border-radius: 50%;
+}
+
+.skill-level {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.skill-level p {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.skill-level .level-bar {
+  display: flex;
+  width: 100%;
+  height: 0.8rem;
+  outline: 2px solid var(--primary-200);
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
